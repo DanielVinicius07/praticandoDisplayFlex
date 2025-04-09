@@ -1,0 +1,28 @@
+/*O que é o Flexbox? 
+Resposta: É uma caixa flexivel 
+que disponibiliza propriedades para que 
+você alinhe/organize os elementos que estão na caixa*/
+
+body{/*Corpo*/
+    background-color: darkorchid;
+}
+
+.conteiner{/*Aqui é minha caixa pai*/
+    display:flex;/*Configuração inicial*/
+    gap: 10px; /*Espaçamento entre os elementos*/
+    height: 600px; 
+    flex-direction: column;/*Essa propriedade define a maneira que você quer alinhar os elementos
+                             seja na horizontal ou na vertical, em linhas ou em colunas
+                            / O column ele alinha os elementos em coluna 
+                            /o row alinha em linha */
+    background-color: rgb(173, 129, 196);
+    flex-wrap: wrap;/*Deixa o site responsivo, mas caso vc não queira coloca um valor wrap
+                    que vai quebrar o elementos para baixo*/
+    flex-flow: column wrap;/*Junta os dois*/
+    justify-content: center;/*Alinha os elementos no centro horizontalmente*/
+}
+.item{/*Elementos filhos*/
+    width: 200px;
+    height:200px;
+    background-color:fuchsia;
+}
